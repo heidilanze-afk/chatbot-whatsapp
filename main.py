@@ -4,10 +4,10 @@ import requests
 
 app = Flask(__name__)
 
-GROQ_API_KEY = "sua-chave-groq"
-ZAPI_INSTANCE = "3F2571175C7A021B804DAAA33AE3F93B"
-ZAPI_TOKEN = "3B03B5825102FF2F222B48E8"
-ZAPI_CLIENT_TOKEN = "F35509bc2db36415b99b6687c4bd67ac4S"
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+ZAPI_INSTANCE = os.environ.get("ZAPI_INSTANCE")
+ZAPI_TOKEN = os.environ.get("ZAPI_TOKEN")
+ZAPI_CLIENT_TOKEN = os.environ.get("ZAPI_CLIENT_TOKEN")
 
 groq_client = Groq(api_key=GROQ_API_KEY)
 
