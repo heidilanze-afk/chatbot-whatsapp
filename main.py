@@ -4,6 +4,8 @@ import requests
 
 app = Flask(__name__)
 
+import os
+
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 ZAPI_INSTANCE = os.environ.get("ZAPI_INSTANCE")
 ZAPI_TOKEN = os.environ.get("ZAPI_TOKEN")
